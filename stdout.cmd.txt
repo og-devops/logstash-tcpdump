@@ -1,0 +1,2 @@
+cd /usr/share/logstash/bin
+./logstash --path.logs /var/log/logstash/ --path.data /var/log/logstash -f /etc/logstash/conf.d/input-geoip.conf
