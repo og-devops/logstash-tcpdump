@@ -1,0 +1,9 @@
+###reference
+https://www.google.com/search?newwindow=1&client=firefox-b-1-d&sxsrf=ALeKk03Ac_KhVOEQUPvgZPHpOjCnG0VcNg%3A1600480393664&ei=iWRlX_yMKIXm-gThsI2QCw&q=openwrt+tcpdump+output&oq=openwrt+tcpdump+output&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCOgQIABBHUKZoWOZ4YIuIAWgAcAR4AIABowGIAYQJkgEDMC44mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwi89dWKjvTrAhUFs54KHWFYA7IQ4dUDCAw&uact=5
+https://foremandrafts.github.io/posts/2017-1-2-wanmonitor
+
+###store tcpdump file locally on router
+tcpdump -nS -i eth1.2 -s0 -tttt > tcpdump.sample.txt
+
+###run on elk to download file for input-geoip.conf to use
+scp root@192.168.0.1:/etc/config/tcpdump.sample.txt /home/unitelife/Desktop/geoiptest.txt
